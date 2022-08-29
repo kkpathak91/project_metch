@@ -19,7 +19,7 @@ try:
 except:
     from scorer import fever_score
 
-#PJ_HOME= '/home/user/app/'
+export PJ_HOME = '/home/user/'
     
 prefix = os.environ['PJ_HOME']
 
