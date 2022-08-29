@@ -27,6 +27,7 @@ except:
     from check_client.fact_checker import FactChecker, id2label
     from er_client import EvidenceRetrieval
 
+os.system('export PJ_HOME="/home/user/"')
 
 def load_config(config):
     if isinstance(config, str):
