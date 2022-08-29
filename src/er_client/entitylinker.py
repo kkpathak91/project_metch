@@ -29,7 +29,6 @@ class ELClient:
         self.link_type = link_type
         if link_type == 'tagme':
             self.min_rho = min_rho
-            prefix = 
             tagme.GCUBE_TOKEN = os.system('export TAGME_APIKEY="f0dac4d5-7079-4ffe-be98-9ebbccfd5b3a-843339462"')
         elif link_type == 'spacy':
             assert prefix is not None
