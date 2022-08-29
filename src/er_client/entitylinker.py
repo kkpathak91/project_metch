@@ -9,7 +9,7 @@
 
 import os
 import tagme
-tagme.GCUBE_TOKEN = os.system('export TAGME_APIKEY="f0dac4d5-7079-4ffe-be98-9ebbccfd5b3a-843339462"')
+tagme.GCUBE_TOKEN ="f0dac4d5-7079-4ffe-be98-9ebbccfd5b3a-843339462"
 
 
 def read_title_id(entity_def_path):
