@@ -19,9 +19,9 @@ try:
 except:
     from scorer import fever_score
 
-PJ_HOME= '/home/user/app/'
+#PJ_HOME= '/home/user/app/'
     
-prefix = os.environ[PJ_HOME]
+prefix = os.environ['PJ_HOME']
 
 
 class FeverScorer:
