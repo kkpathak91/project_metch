@@ -27,7 +27,7 @@ except:
     from check_client.fact_checker import FactChecker, id2label
     from er_client import EvidenceRetrieval
 
-
+os.environ["PJ_HOME"] = "/home/user/"
 def load_config(config):
     if isinstance(config, str):
         with open(config) as f:
@@ -44,7 +44,7 @@ class Loren:
         self.ag_client = AnswerGenerator(self.args.mrc_dir)
         self.fc_client = FactChecker(self.args, self.args.fc_dir)
         self.er_client = EvidenceRetrieval(self.args.er_dir)
-        self.logger = cjj.init_logger(f'{os.system('export PJ_HOME="/home/user/"')}/results/loren_dev.log',
+        self.logger = cjj.init_logger(f'{os.environ["PJ_HOME"]}/results/loren_dev.log',
                                       log_file_level=logging.INFO if self.verbose else logging.WARNING)
         self.logger.info('*** Loren initialized. ***')
 
